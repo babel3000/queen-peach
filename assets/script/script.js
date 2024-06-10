@@ -68,3 +68,5 @@ const positionPoint = (imageReference) => {
 
 setPoints();
 setCloseButtons();
+
+window.addEventListener('resize', setPoints);
