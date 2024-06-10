@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="EN-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="assets/style/style.css" rel="stylesheet">
+    <title>My Web Page</title>
+</head>
+<body>
+    
+    <section class="image-container">
+        <img src="assets/img/main.jpeg" alt="restaurant" class="main-image restaurant-image">
+        <img src="assets/img/bar.png" alt="bar" class="bar-image hidden restaurant-image">
+        <img src="assets/img/door.png" alt="door" class="door-image hidden restaurant-image">
+        <img src="assets/img/table.png" alt="tree" class="tree-image hidden restaurant-image">
+        <img src="assets/img/wine.png" alt="wine" class="wine-image hidden restaurant-image">
+        <div class="button-container">
+            <button class="point" data-image-reference="bar-image" data-modal-reference="bar-modal">+</button>
+            <button class="point" data-image-reference="door-image" data-modal-reference="door-modal">+</button>
+            <button class="point" data-image-reference="tree-image" data-modal-reference="tree-modal">+</button>
+            <button class="point" data-image-reference="wine-image" data-modal-reference="wine-modal">+</button>
+        </div>
+        <div class="dialog-container">
+            <dialog data-modal-reference="bar-modal">
+                <h2 class="dialog-header">Protocolo de Reserva Telefónica & Atribuição de Mesa</h2>
+                <p class="dialog-content">As reservas de mesa por via telefónica são rececionadas pela Hostess do Prunus. A ela cabe fazer a gestão das reservas e da sua rotatividade de forma a garantir um bom funcionamento a equipa de sala. </p>
+                <button class="dialog-close">x</button>
+                <a href="assets/pdf/bar.pdf" class="dialog-link" target="_blank">Mais Informações</a>
+                <div class="video-container">
+                    <iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/VodYHeps-c0?si=PWEm4MF2sJzYSs7b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </dialog>
+            <dialog data-modal-reference="door-modal">
+                <h2 class="dialog-header">Protocolo de Receção & Acompanhamento a Mesa do Cliente 
+                </h2>
+                <p class="dialog-content">A receção á chegada do cliente é feita pela Hostess do Prunus. Ela é o primeiro contacto com o cliente, por conseguinte a simpatia e o sorriso são o “cartão-de-visita”.</p>
+                <button class="dialog-close">x</button>
+                <a href="assets/pdf/door.pdf" class="dialog-link" target="_blank">Mais Informações</a>
+                <div class="video-container">
+                    <iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/ozA4f9EhH6o?si=PWEm4MF2sJzYSs7b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </dialog>
+            <dialog data-modal-reference="tree-modal">
+                <h2 class="dialog-header">Protocolo de Serviço à Mesa</h2>
+                <p class="dialog-content">No Prunus, o restaurante do Hotel Queen of the Peach, respeita e executa a regra dos 40 passos do serviço de mesa. Este protocolo contempla todos os procedimentos por parte do Hostess e/ou Chefe de Sala e do empregado de mesa, desde o acolhimento do cliente até ao término da refeição e respetivas despedidas.</p>
+                <button class="dialog-close">x</button>
+                <a href="assets/pdf/tree.pdf" class="dialog-link" target="_blank">Mais Informações</a>
+                <div class="video-container">
+                    
+                </div>
+            </dialog>
+            <dialog data-modal-reference="wine-modal">
+                <h2 class="dialog-header">Protocolo de Decantação & Serviço de Vinho</h2>
+                <p class="dialog-content">O protocolo de serviço de vinhos é um dos mais exigentes do serviço de mesa. Para este processo o empregado de mesa deve estar bem à vontade com o procedimento e deve conhecer bem a história e características de cada vinho para que possa passar essa informação ao cliente, certificando-lhe que foi uma boa escolha.</p>
+                <button class="dialog-close">x</button>
+                <a href="assets/pdf/wine.pdf" class="dialog-link" target="_blank">Mais Informações</a>
+                <div class="video-container double">
+                    <iframe width="100%" height="215" src="https://www.youtube-nocookie.com/embed/DHe8N-FPMGM?si=PWEm4MF2sJzYSs7b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="100%" height="215" src="https://www.youtube-nocookie.com/embed/ssmXfmAY4UM?si=PWEm4MF2sJzYSs7b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </dialog>
+        </div>
+    </section>
+
+    <script src="assets/script/script.js"></script>
+</body>
+</html>

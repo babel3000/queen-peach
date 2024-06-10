@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+}
+
+.image-container, .dialog-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.dialog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurant-image {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+}
+
+.hidden {
+    display: none;
+}
+
+.blur-image {
+    filter: blur(5px);
+    transition: .7s all;
+}
+
+.point, .dialog-close {
+    padding: 8px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    line-height: 1;
+    width: 20px;
+    height: 20px;
+    box-sizing: content-box;
+    z-index: 1;
+    transition: .7s all;
+}
+
+.point:hover, .dialog-close:hover {
+    background: #f88b69;
+    color: #fff;
+    border-color: #fff;
+}
+
+.dialog-close {
+    top: -15px;
+    right: -15px;
+}
+
+.dialog-header {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #f47c64;
+}
+
+dialog {
+    z-index: 1000;
+    text-align: center;
+    overflow: visible;
+    position: relative;
+    padding: 50px;
+    max-width: 700px;
+}
+
+.dialog-content {
+    padding: 20px 80px;
+    font-size: 20px;
+    color: #f88b69;
+}
+
+dialog::backdrop {
+    background: rgba(255, 203, 165, 0.5);
+    z-index: 999;
+}
+
+.dialog-link {
+    background-color: #f88b69;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: .7s all;
+}
+
+.dialog-link:hover {
+    color: #000;
+    background-color: #FFCBA0;
+}
+
+.video-container {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 80px;
+}
+
+.double {
+    grid-template-columns: 1fr 1fr;
+}
